@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvita Groups - Park-Side Triplex Villas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('villa-banner.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .hero p {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background: #ff6600;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #cc5500;
+        }
+        .features, .gallery, .contact {
+            padding: 60px 20px;
+            text-align: center;
+            background: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+        }
+        .features h2, .gallery h2, .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            font-size: 1.3rem;
+            margin: 15px 0;
+            color: #666;
+        }
+        .gallery .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 30%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: auto;
+        }
+        .contact input, .contact textarea {
+            margin: 12px 0;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            background: #ff6600;
+            color: white;
+            padding: 12px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact button:hover {
+            background: #cc5500;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Park-Side Triplex Villas</h1>
+        <p>Luxury Living Surrounded by Nature</p>
+        <a href="#contact" class="btn">Enquire Now</a>
+    </header>
+    
+    <section class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Spacious 3-Level Villas</li>
+            <li>Park-Facing Balconies</li>
+            <li>Modern Architecture & Interiors</li>
+            <li>Gated Community with Security</li>
+            <li>Premium Amenities & Clubhouse</li>
+        </ul>
+    </section>
+    
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="image-container">
+            <img src="./images/outdoors/Backyard 20Feet Day View .jpg" alt="Villa Exterior">
+            <img src="./images/outdoors/Driveway Day View .jpg" alt="Spacious Living Room">
+            <img src="./images/outdoors/North Villa Day View_01 .jpg" alt="Elegant Kitchen">
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Anvita Groups. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
